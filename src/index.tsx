@@ -1,28 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from "@mui/system"
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import AboutMe from './components/AboutMe/AboutMe';
-import Error from './components/Error/Error';
+import myTheme from './theme';
 
 
-
-
-const router = createBrowserRouter([{
-  path: "/",
-  element: <App />,
-  errorElement: <Error />,
-  children: [
-    {
-      path: "/about-me",
-      element: <AboutMe />
-    }
-
-  ]
-}], {
-  // basename: "/App"
-})
 
 
 const root = ReactDOM.createRoot(
@@ -30,8 +15,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-    {/* <App /> */}
+    <BrowserRouter>
+      <ThemeProvider theme={myTheme}>
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

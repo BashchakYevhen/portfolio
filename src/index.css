@@ -17,3 +17,14 @@ code {
 #root {
     height: 100%;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
