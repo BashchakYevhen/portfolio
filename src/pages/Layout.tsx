@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Container, Box, Avatar, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import SendIcon from '@mui/icons-material/Send';
+import { Outlet } from "react-router-dom";
 import { MaterialUISwitch } from "../components/themeSwitch/switch";
 import photo from "../image/photo.png"
 import { CustomButton } from "../components/styledButton/styledButton";
-import { StyledLink } from "../components/styledLink/styledLink";
-import { Outlet } from "react-router-dom";
-
+import { StyledRoute } from "../components/styledLink/styledLink";
+import { StyledMail } from '../components/styledEmailButt/styledMail';
 export default function Layout() {
     return (
         <Container
@@ -82,7 +83,8 @@ export default function Layout() {
                 }}
             >
                 <CustomButton>download CV</CustomButton>
-                <CustomButton>contact me</CustomButton>
+                <StyledMail href='mailto:evgeny221@gmail.com'
+                >contact me <SendIcon /></StyledMail>
             </Box>
             {/* links box */}
             <Box
@@ -99,11 +101,12 @@ export default function Layout() {
                     mb: "65px"
                 }}
             >
-                <StyledLink to={"/"}>Portfolio</StyledLink>
-                <StyledLink to={"/skills"}>Skills</StyledLink>
+                <StyledRoute to={"/Portfolio"}>Portfolio</StyledRoute>
+                <StyledRoute to={"/skills"}>Skills</StyledRoute>
             </Box>
-            <Outlet />
-
+            <Suspense fallback="...">
+                <Outlet />
+            </Suspense>
             <footer></footer>
         </Container>
     )

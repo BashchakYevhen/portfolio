@@ -1,33 +1,34 @@
 import React from 'react'
-import second from '@mui/icons-material/'
 
 declare module '@mui/material/styles' {
     interface Palette {
-        light: Palette['primary'];
+        color: Palette['primary'];
     }
 
+
     interface PaletteOptions {
-        light?: PaletteOptions['primary'];
+        color?: PaletteOptions['primary'];
     }
     interface PaletteColor {
         backGround?: string;
-        white?: string;
+        primary?: string;
         secondary?: string;
         additional?: string;
         textColor?: string;
+        active?: string;
     }
     interface PaletteColorOptions {
         backGround?: string;
-        white?: string;
+        primary?: string;
         secondary?: string;
         additional?: string;
         textColor?: string;
+        active?: string;
     }
 }
 
 declare module '@mui/icons-material' {
     interface IconPropsColor {
-
     }
 
 }

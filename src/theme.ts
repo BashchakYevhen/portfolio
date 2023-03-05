@@ -2,12 +2,13 @@ import { createTheme } from "@mui/material";
 
 const myTheme = createTheme({
     palette: {
-        light: {
+        color: {
             backGround: '#E9EBEC',
-            white: '#ffffff',
+            primary: '#ffffff',
             secondary: "#D7D7D7",
             additional: "#FBD144",
             textColor: "#3D3D3D",
+            active: "#3c6184"
         },
     },
 
@@ -25,20 +26,26 @@ const getDesignTokens = (mode: String) => ({
         mode,
         ...(mode === 'light'
             ? {
-                // palette values for light mode
-                backGround: '#E9EBEC',
-                white: '#ffffff',
-                secondary: "#D7D7D7",
-                additional: "#FBD144",
-                textColor: "#3D3D3D",
+                color: {
+                    // palette values for light mode
+                    backGround: '#E9EBEC',
+                    primary: '#ffffff',
+                    secondary: "#D7D7D7",
+                    additional: "#FBD144",
+                    textColor: "#3D3D3D",
+                    active: "#3c6184"
+                }
             }
             : {
-                // palette values for dark mode
-                backGround: '#0C151D',
-                white: '#ffffff',
-                secondary: "#D7D7D7",
-                additional: "#FBD144",
-                textColor: "#3D3D3D",
+                color: {
+                    // palette values for dark mode
+                    backGround: '#0C151D',
+                    primary: '#ffffff',
+                    secondary: "#D7D7D7",
+                    additional: "#FBD144",
+                    textColor: "#3D3D3D",
+                    active: "#3c6184"
+                }
             }),
     },
 });

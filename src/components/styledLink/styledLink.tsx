@@ -3,20 +3,20 @@ import { LinkProps, styled } from '@mui/material'
 import { NavLink } from 'react-router-dom'
 
 
-export const StyledLink = styled(NavLink)(({ theme }) => ({
+export const StyledRoute = styled(NavLink)(({ theme }) => ({
     cursor: "pointer",
-    backgroundColor: `${theme.palette.light.white}`,
+    backgroundColor: `${theme.palette.color.primary}`,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    color: `${theme.palette.light.textColor}`,
+    color: `${theme.palette.color.textColor}`,
     width: "351px",
     height: "80px",
     borderRadius: "20px",
     textDecoration: "none",
     '&.active': {
-        backgroundColor: `${theme.palette.light.secondary}`,
-        color: `${theme.palette.light.textColor}`
+        backgroundColor: `${theme.palette.color.secondary}`,
+        color: `${theme.palette.color.textColor}`
     }
 }))
 
