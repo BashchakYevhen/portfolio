@@ -20,7 +20,7 @@ const myTheme = createTheme({
 export default myTheme;
 
 
-
+/*
 const getDesignTokens = (mode: String) => ({
     palette: {
         mode,
@@ -48,4 +48,4 @@ const getDesignTokens = (mode: String) => ({
                 }
             }),
     },
-});
+});*/
