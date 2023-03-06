@@ -31,12 +31,16 @@ export function Skills() {
 
 const ListStyled = styled.ul`
     display: flex;
-    align-items: center;
+    align-items: center;     
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
-    width: 756px;
-    margin: 0 auto;
+    flex-direction: column;
+@media screen and (min-width: 768px) {
+        margin: 0 auto;
+        width: 756px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 `;
 
 const ImgBox = styled.div`

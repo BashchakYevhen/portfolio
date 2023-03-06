@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 
-const myTheme = createTheme({
+export const myTheme = createTheme({
     palette: {
         color: {
             backGround: '#E9EBEC',
@@ -17,8 +17,22 @@ const myTheme = createTheme({
     },
 });
 
-export default myTheme;
 
+export const emotionTheme = {
+    palette: {
+        color: {
+            backGround: '#E9EBEC',
+            primary: '#ffffff',
+            secondary: "#D7D7D7",
+            additional: "#FBD144",
+            textColor: "#3D3D3D",
+            active: "#3c6184"
+        },
+    },
+    components: {
+        MuiIcon: {},
+    },
+};
 
 /*
 const getDesignTokens = (mode: String) => ({

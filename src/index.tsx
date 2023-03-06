@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider } from "@mui/system"
+import { ThemeProvider } from "@emotion/react"
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import myTheme from './theme';
+import { emotionTheme } from './theme';
+
 
 
 
@@ -16,8 +16,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={myTheme}>
-        <CssBaseline />
+      <ThemeProvider theme={emotionTheme}>
         <App />
       </ThemeProvider>
     </BrowserRouter>

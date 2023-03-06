@@ -42,24 +42,37 @@ export function Portfolio() {
 
 const ListStyled = styled.ul`
     display: flex;
-    align-items: center;
+    align-items: center;     
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
-    width: 756px;
-    margin: 0 auto;
+    flex-direction: column;
+@media screen and (min-width: 768px) {
+        margin: 0 auto;
+        width: 756px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 `;
 const ListItemStyled = styled.li`
     position: relative;
-    border-radius: 20px;
     overflow: hidden;
-    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    width: 340px;
+    height: 210px;
+    
+    @media screen and (min-width: 768px) {
+
+        margin-bottom: 0px;
+    }
+
     & img {
         transition: 300ms linear;
         filter: grayscale(80%);
     }
-
     &:hover {
+        cursor: pointer;
         & img {
             filter: grayscale(0%);
         }
