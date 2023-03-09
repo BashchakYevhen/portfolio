@@ -20,7 +20,7 @@ declare module '@mui/material/styles' {
         textColor?: string;
         additionalText?: string;
         active?: string;
-        white: string;
+        // white?: string;
     }
     interface PaletteColorOptions {
         backGround?: string;
@@ -30,7 +30,7 @@ declare module '@mui/material/styles' {
         textColor?: string;
         additionalText?: string;
         active?: string;
-        white?: string;
+        // white?: string;
     }
 }
 
@@ -50,7 +50,10 @@ declare module '@emotion/react' {
                 additional?: string;
                 textColor?: string;
                 active?: string;
-
+                white?: string;
+                name?: string;
+                hoverText?: string;
+                hoverCard?: string;
             }
         }
     }

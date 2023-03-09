@@ -4,6 +4,7 @@ import { AboutMeBox, AvatarBox, MyNameBox } from '../differentBoxes/Boxes'
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import photo from "../../image/photo.png";
+import { Link, Name } from './myDataStyled';
 
 
 export const MyData = () => {
@@ -22,15 +23,9 @@ export const MyData = () => {
                 />
             </AvatarBox>
             <MyNameBox>
-                <Typography sx={{
-                    textAlign: "center",
-                    fontStyle: "normal",
-                    fontWeight: "500",
-                    fontSize: "2.875rem",
-                    lineHeight: "4.3125rem"
-                }} variant="h4">
+                <Name variant="h4">
                     Bashchak Yevhen
-                </Typography>
+                </Name>
                 <Typography sx={{
                     textAlign: "center",
                     mb: "20px",
@@ -48,9 +43,12 @@ export const MyData = () => {
                         gap: "10px",
                     }}
                 >
-                    <a href='https://github.com/BashchakYevhen' referrerPolicy='no-referrer'>
-                        <GitHubIcon /></a>
-                    <LinkedInIcon />
+                    <Link href='https://github.com/BashchakYevhen' referrerPolicy='no-referrer' target="blank" >
+                        <GitHubIcon />
+                    </Link>
+                    <Link href='https://www.linkedin.com/in/bashchak-yevhen/' referrerPolicy='no-referrer' target="blank" >
+                        <LinkedInIcon />
+                    </Link>
                 </Box>
             </MyNameBox>
         </AboutMeBox>

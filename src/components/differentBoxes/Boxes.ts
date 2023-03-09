@@ -63,6 +63,7 @@ export const NavLinksBox = styled(Box)`
     background-Color: #fff;
     margin:  0 auto;
     margin-bottom: 40px;
+    background-color: ${props => props.theme.palette.color.primary};
 @media screen and (min-width: 768px) {
     width: 760px;
     height: 132px;

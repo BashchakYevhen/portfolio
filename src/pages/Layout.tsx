@@ -25,7 +25,6 @@ export default function Layout() {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Container>
-                {/* SWITCH */}
                 <Box
                     sx={{
                         display: "flex",
@@ -41,7 +40,6 @@ export default function Layout() {
                 <Suspense fallback="...">
                     <Outlet />
                 </Suspense>
-                <footer></footer>
             </Container>
         </ThemeProvider>
     );

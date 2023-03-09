@@ -86,7 +86,7 @@ const SignatureBox = styled.div`
     position: absolute;
     bottom: -50px;
     left: 50%;
-    background-color: rgba(60, 97, 132, 0.9);
+    background-color:${props => props.theme.palette.color.hoverCard};
     transform: translate(-50%, 0px);
     width: 100%;
     height: 50px;
@@ -94,6 +94,6 @@ const SignatureBox = styled.div`
     align-items: center;
     justify-content: center;
     & span {
-        color: #e5e5e5;
+        color: ${props => props.theme.palette.color.textColor};
     }
 `;
