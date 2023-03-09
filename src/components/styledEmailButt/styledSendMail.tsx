@@ -30,7 +30,10 @@ export const StyledSendMail = styled(Link)`
     
     &:hover {
         background-Color: ${props => props.theme.palette.color.active};
-         color: ${props => props.theme.palette.color.hoverText};
+        color: ${props => props.theme.palette.color.hoverText};
+            & div svg path {
+            stroke: ${props => props.theme.palette.color.hoverText};
+}
     }
 
 `
@@ -38,4 +41,7 @@ export const StyledSendMail = styled(Link)`
 export const IconStyled = styled.div`
     margin-left: .625rem;
     display: flex;
+    & svg path {
+        stroke: ${props => props.theme.palette.color.textColor};
+    }
 `

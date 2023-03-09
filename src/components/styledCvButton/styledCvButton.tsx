@@ -33,3 +33,7 @@ export const StyledCvButton = styled.button`
     }
     `
 
+export const StyledDownloadIcon = styled.div`
+     margin-left: .625rem;
+    display: flex;
+`
