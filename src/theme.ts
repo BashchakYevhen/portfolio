@@ -5,7 +5,7 @@ export const myTheme = createTheme({
         color: {
             backGround: '#E9EBEC',
             primary: '#ffffff',
-            secondary: "#D7D7D7",
+            secondary: "#04293A",
             additional: "#FBD144",
             textColor: "#3D3D3D",
             active: "#3c6184"
@@ -18,48 +18,35 @@ export const myTheme = createTheme({
 });
 
 
-export const emotionTheme = {
-    palette: {
-        color: {
-            backGround: '#E9EBEC',
-            primary: '#ffffff',
-            secondary: "#D7D7D7",
-            additional: "#FBD144",
-            textColor: "#3D3D3D",
-            active: "#3c6184"
-        },
-    },
-    components: {
-        MuiIcon: {},
-    },
-};
 
-/*
-const getDesignTokens = (mode: String) => ({
+export const getDesignTokens = (mode: String) => ({
     palette: {
-        mode,
         ...(mode === 'light'
             ? {
                 color: {
                     // palette values for light mode
-                    backGround: '#E9EBEC',
-                    primary: '#ffffff',
+                    backGround: '#E5E5E5',
+                    primary: "#ECB365",
                     secondary: "#D7D7D7",
                     additional: "#FBD144",
                     textColor: "#3D3D3D",
-                    active: "#3c6184"
+                    additionalText: "#A3ABB2",
+                    active: "#3c6184",
+                    white: "#fff"
                 }
             }
             : {
                 color: {
                     // palette values for dark mode
-                    backGround: '#0C151D',
+                    backGround: '#041C32',
                     primary: '#ffffff',
-                    secondary: "#D7D7D7",
+                    secondary: "#064663",
                     additional: "#FBD144",
-                    textColor: "#3D3D3D",
-                    active: "#3c6184"
+                    textColor: "#A3ABB2",
+                    additionalText: "#A3ABB2",
+                    active: "#ECB365",
+                    white: "#fff"
                 }
             }),
     },
-});*/
+});

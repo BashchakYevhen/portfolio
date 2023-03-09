@@ -4,7 +4,9 @@ import { ThemeProvider } from "@emotion/react"
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import { emotionTheme } from './theme';
+import { myTheme } from './theme';
+
+
 
 
 
@@ -16,7 +18,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={emotionTheme}>
+      <ThemeProvider theme={myTheme}>
         <App />
       </ThemeProvider>
     </BrowserRouter>

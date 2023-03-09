@@ -18,7 +18,9 @@ declare module '@mui/material/styles' {
         secondary?: string;
         additional?: string;
         textColor?: string;
+        additionalText?: string;
         active?: string;
+        white: string;
     }
     interface PaletteColorOptions {
         backGround?: string;
@@ -26,7 +28,9 @@ declare module '@mui/material/styles' {
         secondary?: string;
         additional?: string;
         textColor?: string;
+        additionalText?: string;
         active?: string;
+        white?: string;
     }
 }
 
@@ -46,6 +50,7 @@ declare module '@emotion/react' {
                 additional?: string;
                 textColor?: string;
                 active?: string;
+
             }
         }
     }
