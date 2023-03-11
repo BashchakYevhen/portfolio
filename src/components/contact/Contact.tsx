@@ -7,7 +7,7 @@ import { GrSend } from "react-icons/gr"
 export const Contact = () => {
     return (
         <ContactBox>
-            <StyledCvButton>Download CV <FileDownloadIcon /></StyledCvButton>
+            <StyledCvButton download="CV.pdf" href='../../image/YEVHEN_BASHCHAK.pdf' >Download CV <FileDownloadIcon /></StyledCvButton>
             <StyledSendMail href="mailto:evgeny221@gmail.com">
                 Send mail<IconStyled> <GrSend color="blue" /></IconStyled>
             </StyledSendMail>

@@ -43,10 +43,10 @@ export const MyData = () => {
                         gap: "10px",
                     }}
                 >
-                    <Link href='https://github.com/BashchakYevhen' referrerPolicy='no-referrer' target="blank" >
+                    <Link href='https://github.com/BashchakYevhen' rel="noopener noreferrer" target="blank" >
                         <GitHubIcon />
                     </Link>
-                    <Link href='https://www.linkedin.com/in/bashchak-yevhen/' referrerPolicy='no-referrer' target="blank" >
+                    <Link href='https://www.linkedin.com/in/bashchak-yevhen/' rel="noopener noreferrer" target="blank" >
                         <LinkedInIcon />
                     </Link>
                 </Box>

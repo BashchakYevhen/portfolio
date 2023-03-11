@@ -5,7 +5,7 @@ import { StyledRoute } from "../styledLink/styledLink"
 export const Navigation = () => {
     return (
         <NavLinksBox>
-            <StyledRoute to={"/Portfolio"}>Portfolio</StyledRoute>
+            <StyledRoute to={"/"}>Portfolio</StyledRoute>
             <StyledRoute to={"/skills"}>Skills</StyledRoute>
         </NavLinksBox>
     )

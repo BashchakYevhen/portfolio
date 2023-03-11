@@ -15,15 +15,15 @@ export function Skills() {
 
     return (
         <ListStyled>
-            <li><ImgBox><img src={HTML} alt="HTML" /></ImgBox></li>
-            <li><ImgBox><img src={CSS} alt="Css" /></ImgBox></li>
-            <li><ImgBox><img src={JavaScript} alt="JavaScript" /></ImgBox></li>
-            <li><ImgBox><img src={React} alt="React" /></ImgBox></li>
-            <li><ImgBox><img src={TypeScript} alt="TypeScript" /></ImgBox></li>
-            <li><ImgBox><img src={Node} alt="Node" /></ImgBox></li>
-            <li><ImgBox><img src={Mongo} alt="Mongo" /></ImgBox></li>
-            <li><ImgBox><img src={Figma} alt="Figma" /></ImgBox></li>
-            <li><ImgBox><img src={StyledComponent} alt="StyledComponent" /></ImgBox></li>
+            <ListItem><ImgBox><img src={HTML} alt="HTML" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={CSS} alt="Css" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={JavaScript} alt="JavaScript" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={React} alt="React" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={TypeScript} alt="TypeScript" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={Node} alt="Node" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={Mongo} alt="Mongo" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={Figma} alt="Figma" /></ImgBox></ListItem>
+            <ListItem><ImgBox><img src={StyledComponent} alt="StyledComponent" /></ImgBox></ListItem>
         </ListStyled>
     );
 }
@@ -35,13 +35,27 @@ const ListStyled = styled.ul`
     justify-content: center;
     gap: 20px;
     flex-direction: column;
+    margin-bottom: 20px;
 @media screen and (min-width: 768px) {
         margin: 0 auto;
+        margin-bottom: 20px;
         width: 756px;
         flex-direction: row;
         flex-wrap: wrap;
     }
 `;
+const ListItem = styled.li`
+display: flex;
+align-items: center;
+justify-content: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    width: 220px;
+    height: 210px;
+    background-color: ${props => props.theme.palette.color.primary};
+
+`
 
 const ImgBox = styled.div`
 & img { 

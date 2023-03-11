@@ -19,6 +19,7 @@ export const StyledRoute = styled(NavLink)`
     }
     &:hover {
         cursor: pointer;
+         border:1px solid ${props => props.theme.palette.color.active};
     }
     @media screen and (min-width: 768px) {
         width: 351px;

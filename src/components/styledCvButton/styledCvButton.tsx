@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 
-export const StyledCvButton = styled.button`
+export const StyledCvButton = styled.a`
     display: flex;
     align-items: center;
     justify-Content: center;
